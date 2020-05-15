@@ -104,10 +104,21 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Are you sleepy?\nGo get Papa!"
+                                                "Good good sweet\nboys brush their\nteeth..."
                                             ],
                                             "avatarId": ""
                                         }
+                                    },
+                                    {
+                                        "id": "9fe4eb53-70a0-4845-b25a-d2666e9cbf50",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Go get Papa!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "__type": "event"
                                     },
                                     {
                                         "id": "428dd269-46d4-4997-9f4f-065b338e66a6",
@@ -359,9 +370,28 @@
                                         "id": "02ba86ad-68dc-4f8b-8eff-e0c9a68ed390",
                                         "command": "EVENT_TEXT",
                                         "args": {
-                                            "text": "You must be\nhungry!",
+                                            "text": [
+                                                "What is it buddy?"
+                                            ],
                                             "avatarId": ""
                                         }
+                                    },
+                                    {
+                                        "id": "e27d625a-84ab-453e-af80-51a8752fd495",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "player",
+                                            "emoteId": "2"
+                                        }
+                                    },
+                                    {
+                                        "id": "8816c18e-4130-4bfb-918b-37c3756cbfde",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": "You must be\nhungry!",
+                                            "avatarId": ""
+                                        },
+                                        "__type": "event"
                                     },
                                     {
                                         "id": "880df176-bcad-4bbe-af96-497a9c3eb377",
@@ -2109,53 +2139,125 @@
                             "children": {
                                 "true": [
                                     {
-                                        "id": "db573937-f599-45f6-b90d-c69b8c514d06",
-                                        "command": "EVENT_TEXT",
+                                        "id": "c4923c19-40e6-4e58-9cb9-a23ce76a1a5e",
+                                        "command": "EVENT_IF_TRUE",
                                         "args": {
-                                            "text": [
-                                                "Here's your\ntoothbrush."
+                                            "variable": "14",
+                                            "__collapseElse": false,
+                                            "__disableElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "a6873734-361b-45eb-966f-803e1c15de80",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Go get it!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "da25a484-ea8b-4137-93f9-3761a56f46cb",
+                                                    "command": "EVENT_END"
+                                                }
                                             ],
-                                            "avatarId": ""
+                                            "false": [
+                                                {
+                                                    "id": "892341bd-65b1-4484-9c50-3b284412f65c",
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "12",
+                                                        "__collapseElse": false,
+                                                        "__disableElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "id": "7f93ee7e-0095-4e2e-a3ee-6a70fa5af3f1",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": "Go to your\nteepee...",
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "3ee6343d-1646-456c-b84a-500be20fe179",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "id": "db573937-f599-45f6-b90d-c69b8c514d06",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Here's your\ntoothbrush."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "44b62859-4722-4b9a-8827-f025de0b12bf",
+                                                                "command": "EVENT_SET_VALUE",
+                                                                "args": {
+                                                                    "variable": "L0",
+                                                                    "value": "0"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "756a333c-0f63-47dc-a727-8e3ea90ddaea",
+                                                                "command": "EVENT_ACTOR_MOVE_TO",
+                                                                "args": {
+                                                                    "actorId": "85dbf421-fa17-4cef-a9e1-a2680b8e3620",
+                                                                    "x": 15,
+                                                                    "y": 0
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "e1479191-05c3-4f01-8ed4-d31bb0536231",
+                                                                "command": "EVENT_ACTOR_SHOW",
+                                                                "args": {
+                                                                    "actorId": "85dbf421-fa17-4cef-a9e1-a2680b8e3620"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "f8948fd2-9cb7-4563-8132-73f4d8a5a8ad",
+                                                                "command": "EVENT_ACTOR_MOVE_TO",
+                                                                "args": {
+                                                                    "actorId": "85dbf421-fa17-4cef-a9e1-a2680b8e3620",
+                                                                    "x": 15,
+                                                                    "y": 8
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "4a8812bd-ea0e-4b19-b2c5-0f5da9dd120d",
+                                                                "command": "EVENT_SET_TRUE",
+                                                                "args": {
+                                                                    "variable": "14"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "214208fe-ca1f-4abc-ba9e-0b232924063d",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "id": "6fce5619-37cc-4780-82e1-d1170caba9f8",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
                                         }
                                     },
                                     {
-                                        "id": "44b62859-4722-4b9a-8827-f025de0b12bf",
+                                        "id": "d59c94cb-f30c-4942-aabc-26bfc654eb56",
                                         "command": "EVENT_SET_VALUE",
                                         "args": {
                                             "variable": "L0",
                                             "value": "0"
-                                        }
-                                    },
-                                    {
-                                        "id": "756a333c-0f63-47dc-a727-8e3ea90ddaea",
-                                        "command": "EVENT_ACTOR_MOVE_TO",
-                                        "args": {
-                                            "actorId": "85dbf421-fa17-4cef-a9e1-a2680b8e3620",
-                                            "x": 15,
-                                            "y": 0
-                                        }
-                                    },
-                                    {
-                                        "id": "e1479191-05c3-4f01-8ed4-d31bb0536231",
-                                        "command": "EVENT_ACTOR_SHOW",
-                                        "args": {
-                                            "actorId": "85dbf421-fa17-4cef-a9e1-a2680b8e3620"
-                                        }
-                                    },
-                                    {
-                                        "id": "f8948fd2-9cb7-4563-8132-73f4d8a5a8ad",
-                                        "command": "EVENT_ACTOR_MOVE_TO",
-                                        "args": {
-                                            "actorId": "85dbf421-fa17-4cef-a9e1-a2680b8e3620",
-                                            "x": 15,
-                                            "y": 8
-                                        }
-                                    },
-                                    {
-                                        "id": "4a8812bd-ea0e-4b19-b2c5-0f5da9dd120d",
-                                        "command": "EVENT_SET_TRUE",
-                                        "args": {
-                                            "variable": "12"
                                         }
                                     },
                                     {
@@ -2226,7 +2328,9 @@
                                                     "id": "7f5cd6e4-551d-4861-839d-7a0ac9f2aafa",
                                                     "command": "EVENT_TEXT",
                                                     "args": {
-                                                        "text": "Buddy-dog rescue",
+                                                        "text": [
+                                                            "Sup, Dunkin\nbieber?"
+                                                        ],
                                                         "avatarId": ""
                                                     }
                                                 },
@@ -2240,7 +2344,9 @@
                                                     "id": "bd2260a0-dbc2-41ee-b66b-49acfdf4d060",
                                                     "command": "EVENT_TEXT",
                                                     "args": {
-                                                        "text": "What's going on,\nman?",
+                                                        "text": [
+                                                            "Good boy!"
+                                                        ],
                                                         "avatarId": ""
                                                     }
                                                 },
@@ -2373,9 +2479,22 @@
                                         "id": "efd590d7-e7f8-42f9-8e5a-57e431d67c58",
                                         "command": "EVENT_TEXT",
                                         "args": {
-                                            "text": "You want to play,\nhuh?",
+                                            "text": [
+                                                "What's going on,\nman?"
+                                            ],
                                             "avatarId": ""
                                         }
+                                    },
+                                    {
+                                        "id": "400809e9-b631-4154-aac1-177ca5251fe6",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You want to play,\nhuh?"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "__type": "event"
                                     },
                                     {
                                         "id": "019c06fd-0dc0-4367-a85e-88dfd61bf173",
@@ -3487,14 +3606,14 @@
                             "id": "868cb78a-befc-4fd1-9bba-09ce11de01be",
                             "command": "EVENT_SET_TRUE",
                             "args": {
-                                "variable": "13"
+                                "variable": "12"
                             }
                         },
                         {
                             "id": "e5c66c05-3f73-4460-8d5b-bc5e10039cb9",
                             "command": "EVENT_SET_FALSE",
                             "args": {
-                                "variable": "12"
+                                "variable": "14"
                             }
                         },
                         {
@@ -3660,7 +3779,7 @@
                     "id": "1a47d8dc-1386-4e7d-9061-33026d824871",
                     "command": "EVENT_IF_TRUE",
                     "args": {
-                        "variable": "12",
+                        "variable": "14",
                         "__collapseElse": false,
                         "__disableElse": true
                     },
@@ -5146,6 +5265,28 @@
                     "__type": "event"
                 },
                 {
+                    "id": "d14ccfc4-97a1-4353-8f88-5d661e317e79",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "He gets away with\npretty much\nanything"
+                        ],
+                        "avatarId": ""
+                    },
+                    "__type": "event"
+                },
+                {
+                    "id": "725176fe-2da0-4740-b92a-0812569dd244",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "although some\ntimes he has to be\npersistent."
+                        ],
+                        "avatarId": ""
+                    },
+                    "__type": "event"
+                },
+                {
                     "id": "d809d901-3e48-46c7-94f1-9dc4ec39a590",
                     "command": "EVENT_TEXT",
                     "args": {
@@ -5298,6 +5439,10 @@
         {
             "id": "13",
             "name": "AteToothbrush"
+        },
+        {
+            "id": "14",
+            "name": "ShowToothbrush"
         }
     ],
     "backgrounds": [
