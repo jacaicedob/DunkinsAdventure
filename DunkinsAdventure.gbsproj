@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 575,
-        "worldScrollY": 114,
-        "zoom": 152.96865386515856,
+        "worldScrollX": 82,
+        "worldScrollY": 0,
+        "zoom": 102.68082597106695,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -4477,8 +4477,8 @@
             "height": 18,
             "collisions": [],
             "id": "956f12c7-e581-48a7-a418-7719af844ee4",
-            "x": 441.39770207285994,
-            "y": 191.67333675502704,
+            "x": 423.86765220252465,
+            "y": 65.06742102482936,
             "actors": [],
             "triggers": [],
             "script": [
@@ -4492,7 +4492,10 @@
                 {
                     "id": "0220405d-f948-462a-82cc-8536f3535782",
                     "command": "EVENT_GROUP",
-                    "args": {},
+                    "args": {
+                        "__comment": true,
+                        "__collapse": true
+                    },
                     "children": {
                         "true": [
                             {
@@ -4685,9 +4688,9 @@
                     "id": "5b0511de-212e-4643-9597-e780b045a5bc",
                     "command": "EVENT_SWITCH_SCENE",
                     "args": {
-                        "sceneId": "8e15a732-9cf0-4de5-9730-74fc11c9f0a2",
-                        "x": 16,
-                        "y": 7,
+                        "sceneId": "e0058ade-abc3-45ed-9cb3-0eb8c417367a",
+                        "x": 0,
+                        "y": 0,
                         "direction": "down",
                         "fadeSpeed": "2",
                         "__collapse": true
@@ -4706,8 +4709,8 @@
             "height": 18,
             "collisions": [],
             "id": "b5021d8f-feca-4a56-96b8-6c8f27c99c7a",
-            "x": 476.0453234389472,
-            "y": 378.63974639089145,
+            "x": 556.8783311743817,
+            "y": 534.4624119049815,
             "actors": [
                 {
                     "spriteSheetId": "f8998789-15d9-4edc-9364-abf5c422277d",
@@ -5078,6 +5081,154 @@
                     "command": "EVENT_END"
                 }
             ]
+        },
+        {
+            "name": "Scene 7",
+            "backgroundId": "402e541e-0f45-49f6-9a4f-f59409829609",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "e0058ade-abc3-45ed-9cb3-0eb8c417367a",
+            "x": 542.037461710585,
+            "y": 325.83351330978553,
+            "actors": [
+                {
+                    "spriteSheetId": "8ffffeb3-a191-41ce-bc67-12bac647ff17",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "2",
+                    "id": "dab1481a-4d94-45ea-8b2e-f83992d0939a",
+                    "x": 9,
+                    "y": 7,
+                    "animate": true
+                }
+            ],
+            "triggers": [],
+            "script": [
+                {
+                    "id": "59edae94-6b69-4b8c-878f-88a00c69c2ae",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "player"
+                    }
+                },
+                {
+                    "id": "80f21c89-dfa0-47b1-98de-1b2ada163fa7",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Dunkin is a good\ndog who lives with\nhis Mommy and Papa"
+                        ],
+                        "avatarId": ""
+                    }
+                },
+                {
+                    "id": "e44f5eee-f76f-4954-9e48-7b5387cbee3b",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "He likes to play\nwith his toys"
+                        ],
+                        "avatarId": ""
+                    },
+                    "__type": "event"
+                },
+                {
+                    "id": "db2b35d1-8c29-4ae7-9e33-43037d0c5f6d",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "and take a nap\nafter eating his\nfavorite snack..."
+                        ],
+                        "avatarId": ""
+                    },
+                    "__type": "event"
+                },
+                {
+                    "id": "d809d901-3e48-46c7-94f1-9dc4ec39a590",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Your task is to\nhelp him do his\nfavorite things."
+                        ],
+                        "avatarId": ""
+                    },
+                    "__type": "event"
+                },
+                {
+                    "id": "4003e842-fcd7-472e-bff1-e01b89e6f02e",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Good luck!"
+                        ],
+                        "avatarId": ""
+                    },
+                    "__type": "event"
+                },
+                {
+                    "id": "17931325-8775-42b5-82c3-52b33a752fd6",
+                    "command": "EVENT_GROUP",
+                    "args": {},
+                    "children": {
+                        "true": [
+                            {
+                                "id": "4c3c26cc-ff50-4f01-b224-9b9bcc03ed78",
+                                "command": "EVENT_SET_INPUT_SCRIPT",
+                                "args": {
+                                    "input": "select",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "id": "1296f49e-e8b5-4413-98ef-2ddb68105e1e",
+                                            "command": "EVENT_SCENE_PUSH_STATE",
+                                            "args": {}
+                                        },
+                                        {
+                                            "id": "51cde2c8-b1ef-42d2-9b89-f1f009394dd4",
+                                            "command": "EVENT_SWITCH_SCENE",
+                                            "args": {
+                                                "sceneId": "b5021d8f-feca-4a56-96b8-6c8f27c99c7a",
+                                                "x": 0,
+                                                "y": 0,
+                                                "direction": "",
+                                                "fadeSpeed": "1"
+                                            }
+                                        },
+                                        {
+                                            "id": "b9416a79-6151-45da-bd5a-69b4404176fe",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "c16c02ba-e96a-4700-a12b-27a71ad2e82b",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    },
+                    "__type": "event"
+                },
+                {
+                    "id": "2877c9d3-4de2-4961-bfeb-907bc293b52f",
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "8e15a732-9cf0-4de5-9730-74fc11c9f0a2",
+                        "x": 16,
+                        "y": 7,
+                        "direction": "down",
+                        "fadeSpeed": "2"
+                    }
+                },
+                {
+                    "id": "4fd1b86f-e124-41c8-8b7e-9c509758562d",
+                    "command": "EVENT_END"
+                }
+            ]
         }
     ],
     "_version": "1.2.0",
@@ -5191,6 +5342,16 @@
             "_v": 1589555662290
         },
         {
+            "id": "402e541e-0f45-49f6-9a4f-f59409829609",
+            "name": "blank",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "blank.png",
+            "_v": 1589566704570
+        },
+        {
             "id": "83211c68-7fcd-4258-8acf-f993801f2f9e",
             "name": "house",
             "width": 20,
@@ -5208,7 +5369,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "logo.png",
-            "_v": 1589555130831
+            "_v": 1589566569532
         },
         {
             "id": "6d432ad7-1a9b-450b-b9bf-df5b23014b0a",
