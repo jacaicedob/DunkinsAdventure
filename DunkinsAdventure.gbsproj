@@ -3,7 +3,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 740,
-        "worldScrollY": 12,
+        "worldScrollY": 188,
         "zoom": 140.19149051606655,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
@@ -104,7 +104,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Good good sweet\nboys brush their\nteeth..."
+                                                "Good good sweet\nboy. Are you\nsleepy?"
                                             ],
                                             "avatarId": ""
                                         }
@@ -2267,7 +2267,7 @@
                                                                 "command": "EVENT_TEXT",
                                                                 "args": {
                                                                     "text": [
-                                                                        "Here's your\ntoothbrush."
+                                                                        "Here's your\nsnack."
                                                                     ],
                                                                     "avatarId": ""
                                                                 }
@@ -4269,7 +4269,9 @@
                                                                             "id": "0481399b-2530-4243-ba00-639a9bf403f1",
                                                                             "command": "EVENT_TEXT",
                                                                             "args": {
-                                                                                "text": "Go get your\ntoothbrush!",
+                                                                                "text": [
+                                                                                    "Go get your\nsnack!"
+                                                                                ],
                                                                                 "avatarId": ""
                                                                             }
                                                                         },
@@ -4325,7 +4327,7 @@
                                                                                         "command": "EVENT_TEXT",
                                                                                         "args": {
                                                                                             "text": [
-                                                                                                "Eat your\ntoothbrush first."
+                                                                                                "Eat your\nsnack first."
                                                                                             ],
                                                                                             "avatarId": ""
                                                                                         },
@@ -4364,7 +4366,7 @@
                                                                             "command": "EVENT_TEXT",
                                                                             "args": {
                                                                                 "text": [
-                                                                                    "Go get your\ntoothbrush!"
+                                                                                    "Go get your\nsnack!"
                                                                                 ],
                                                                                 "avatarId": ""
                                                                             },
@@ -6811,7 +6813,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "menu.png",
-            "_v": 1589595173671
+            "_v": 1589598271355
         },
         {
             "id": "a91a19ce-7b33-4044-b277-aae75f3ecc74",
