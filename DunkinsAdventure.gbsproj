@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 613,
-        "worldScrollY": 335,
+        "worldScrollX": 484,
+        "worldScrollY": 198,
         "zoom": 141.83435557037592,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
@@ -2040,6 +2040,81 @@
                                         }
                                     ]
                                 }
+                            },
+                            {
+                                "id": "935c9ecc-7871-4e13-8a9a-53341e928dad",
+                                "command": "EVENT_SET_INPUT_SCRIPT",
+                                "args": {
+                                    "input": "b",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "id": "edeb1cac-a66b-4d72-8752-62f3a934816d",
+                                            "command": "EVENT_ACTOR_EMOTE",
+                                            "args": {
+                                                "actorId": "player",
+                                                "emoteId": "4"
+                                            }
+                                        },
+                                        {
+                                            "id": "8d29ba86-352e-43b1-8908-39a4782b8317",
+                                            "command": "EVENT_INC_VALUE",
+                                            "args": {
+                                                "variable": "19"
+                                            }
+                                        },
+                                        {
+                                            "id": "70f8f70f-5cbe-48b3-b3b9-87cfc567662f",
+                                            "command": "EVENT_IF_VALUE",
+                                            "args": {
+                                                "variable": "19",
+                                                "operator": "==",
+                                                "comparator": 3,
+                                                "__collapseElse": false,
+                                                "__disableElse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "id": "757f1199-f3dc-446c-8ad9-92610c35641d",
+                                                        "command": "EVENT_TEXT",
+                                                        "args": {
+                                                            "text": [
+                                                                "No barking buddy!"
+                                                            ],
+                                                            "avatarId": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "50b00e53-db56-4151-aefb-7331ce2691c7",
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "19",
+                                                            "value": "0"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "0a954288-eeae-42e4-9f29-2f4e21661b85",
+                                                        "command": "EVENT_END"
+                                                    }
+                                                ],
+                                                "false": [
+                                                    {
+                                                        "id": "9cc1f3d7-81ef-4c01-9a59-a216290e5f30",
+                                                        "command": "EVENT_END"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "id": "4e87c45c-1dc3-4649-b795-445c61eb844f",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                },
+                                "__type": "event"
                             },
                             {
                                 "id": "9813439f-6123-4498-9f07-8f9c12528f4a",
@@ -4746,7 +4821,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "ResetVariables",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -6569,7 +6644,7 @@
                     "id": "92be1ca2-e11b-4d05-b6ae-35edae3ec709",
                     "command": "EVENT_GROUP",
                     "args": {
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -6578,7 +6653,7 @@
                                 "command": "EVENT_SET_INPUT_SCRIPT",
                                 "args": {
                                     "input": "select",
-                                    "__collapse": false
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true": [
@@ -6609,7 +6684,8 @@
                                 "id": "120b90d2-6de0-4af0-acce-8dfd8f29b64e",
                                 "command": "EVENT_SET_INPUT_SCRIPT",
                                 "args": {
-                                    "input": "b"
+                                    "input": "b",
+                                    "__collapse": false
                                 },
                                 "children": {
                                     "true": [
@@ -6619,6 +6695,143 @@
                                             "args": {
                                                 "actorId": "player",
                                                 "emoteId": "4"
+                                            }
+                                        },
+                                        {
+                                            "id": "55cbc822-25fa-4676-9fe2-a77ce4eeb677",
+                                            "command": "EVENT_INC_VALUE",
+                                            "args": {
+                                                "variable": "19"
+                                            }
+                                        },
+                                        {
+                                            "id": "1b13cf5d-e43e-45a5-81fa-930f9348234b",
+                                            "command": "EVENT_IF_TRUE",
+                                            "args": {
+                                                "variable": "18",
+                                                "__collapseElse": false
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "id": "fffbe971-2a43-46bb-9aba-cc9cd9a1cc86",
+                                                        "command": "EVENT_IF_VALUE",
+                                                        "args": {
+                                                            "variable": "19",
+                                                            "operator": "==",
+                                                            "comparator": 3,
+                                                            "__collapseElse": false,
+                                                            "__disableElse": true
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "id": "85c5683f-39b4-4941-9866-fc07718917c0",
+                                                                    "command": "EVENT_TEXT",
+                                                                    "args": {
+                                                                        "text": [
+                                                                            "What is it, buddy?"
+                                                                        ],
+                                                                        "avatarId": ""
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "773e2955-d99f-4859-b370-09687afd96e9",
+                                                                    "command": "EVENT_TEXT",
+                                                                    "args": {
+                                                                        "text": [
+                                                                            "Were you playing\nwith the computer\nagain?"
+                                                                        ],
+                                                                        "avatarId": ""
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "60b7ca66-509b-4c34-9832-334a97d8c532",
+                                                                    "command": "EVENT_SET_VALUE",
+                                                                    "args": {
+                                                                        "variable": "19",
+                                                                        "value": "0"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "4c6873c1-d29d-47d9-828c-07868116594c",
+                                                                    "command": "EVENT_SWITCH_SCENE",
+                                                                    "args": {
+                                                                        "sceneId": "6283943e-8a44-4df4-91bf-d1e81e7ac91d",
+                                                                        "x": 17,
+                                                                        "y": 8,
+                                                                        "direction": "left",
+                                                                        "fadeSpeed": "2"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "097e0cd9-b20c-4960-bd96-0b52db3dc2bb",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ],
+                                                            "false": [
+                                                                {
+                                                                    "id": "22d768d1-cdaa-4bf6-9d01-20fbff5a4dae",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "__type": "event"
+                                                    },
+                                                    {
+                                                        "id": "701443e4-bce2-4472-96b0-59d09a2f6a0c",
+                                                        "command": "EVENT_END"
+                                                    }
+                                                ],
+                                                "false": [
+                                                    {
+                                                        "id": "d007db18-3b34-46c6-9343-29a165dfe0ed",
+                                                        "command": "EVENT_IF_VALUE",
+                                                        "args": {
+                                                            "variable": "19",
+                                                            "operator": "==",
+                                                            "comparator": 3,
+                                                            "__collapseElse": false,
+                                                            "__disableElse": true
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "id": "18cfc5bb-6b92-4b81-934e-f7001ec2ef34",
+                                                                    "command": "EVENT_TEXT",
+                                                                    "args": {
+                                                                        "text": [
+                                                                            "No barking buddy!"
+                                                                        ],
+                                                                        "avatarId": ""
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "1bbda02f-579b-4911-b020-76c7a5761eea",
+                                                                    "command": "EVENT_SET_VALUE",
+                                                                    "args": {
+                                                                        "variable": "19",
+                                                                        "value": "0"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "df133b36-1d46-48cf-826c-c2a409a6fdff",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ],
+                                                            "false": [
+                                                                {
+                                                                    "id": "bfbceea2-3140-43e6-826d-dbd5742393f5",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "10cf7bd5-73e9-4824-87e4-4a513ecff3d6",
+                                                        "command": "EVENT_END"
+                                                    }
+                                                ]
                                             }
                                         },
                                         {
@@ -6641,7 +6854,8 @@
                     "command": "EVENT_IF_FALSE",
                     "args": {
                         "variable": "17",
-                        "__collapseElse": false
+                        "__collapseElse": false,
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -6879,6 +7093,32 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": "I need to go\nthere!",
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "983891a3-b054-47d1-924b-137ae169b38f",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": "I need to tell\nMommy and Papa!",
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "1cc7d756-6f91-4ae9-8ea1-516ccdad0f96",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": "If they don't\nlisten to me",
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "ce407575-40a6-47bb-9fb1-242ea21b6df8",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "I should bark to\nget their\nattention."
+                                            ],
                                             "avatarId": ""
                                         }
                                     },
@@ -7526,6 +7766,166 @@
                     "command": "EVENT_END"
                 }
             ]
+        },
+        {
+            "name": "Scene 13",
+            "backgroundId": "9f7aa874-fb33-4106-9945-52685b08c542",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                48,
+                28,
+                223,
+                0,
+                14,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                128,
+                31,
+                0,
+                8,
+                1,
+                128,
+                16,
+                0,
+                8,
+                1,
+                128,
+                31,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "6283943e-8a44-4df4-91bf-d1e81e7ac91d",
+            "x": 676.4595369094859,
+            "y": 629.2213344792177,
+            "actors": [
+                {
+                    "spriteSheetId": "96bedeb6-9eb3-4c65-b80d-7556f24566e8",
+                    "movementType": "faceInteraction",
+                    "direction": "left",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "afa67fdb-9d62-459d-9554-f827ba57eb20",
+                    "x": 17,
+                    "y": 8
+                },
+                {
+                    "spriteSheetId": "34a53c8d-a453-477d-93d2-5dc5ccbb3956",
+                    "movementType": "faceInteraction",
+                    "direction": "left",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "643c5f8d-cb7b-45de-a41f-87b66335f9d8",
+                    "x": 17,
+                    "y": 8
+                }
+            ],
+            "triggers": [],
+            "script": [
+                {
+                    "id": "de5655a0-2b46-4450-9b78-365d8d09b722",
+                    "command": "EVENT_ACTOR_MOVE_TO",
+                    "args": {
+                        "actorId": "player",
+                        "x": 0,
+                        "y": 6
+                    }
+                },
+                {
+                    "id": "e734a321-a5c4-4fc1-aaab-bd2191c35f12",
+                    "command": "EVENT_ACTOR_MOVE_TO",
+                    "args": {
+                        "actorId": "afa67fdb-9d62-459d-9554-f827ba57eb20",
+                        "x": 2,
+                        "y": 6
+                    }
+                },
+                {
+                    "id": "4325b813-9ea8-4ab6-aac3-bc156295e87d",
+                    "command": "EVENT_ACTOR_MOVE_TO",
+                    "args": {
+                        "actorId": "643c5f8d-cb7b-45de-a41f-87b66335f9d8",
+                        "x": 4,
+                        "y": 6
+                    }
+                },
+                {
+                    "id": "6e188120-213d-4148-a9e9-22cdb0e3024a",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": "What is this?",
+                        "avatarId": ""
+                    }
+                },
+                {
+                    "id": "0cfd25e1-85ce-4c81-bcd1-9add33cd16b0",
+                    "command": "EVENT_ACTOR_EMOTE",
+                    "args": {
+                        "actorId": "afa67fdb-9d62-459d-9554-f827ba57eb20",
+                        "emoteId": 0
+                    }
+                },
+                {
+                    "id": "403ec8d2-5002-4d78-bf21-5742dfd375f3",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": "You Googled\nsomething?",
+                        "avatarId": ""
+                    }
+                },
+                {
+                    "id": "eff2930c-0dda-447d-b841-7260d773139a",
+                    "command": "EVENT_ACTOR_EMOTE",
+                    "args": {
+                        "actorId": "643c5f8d-cb7b-45de-a41f-87b66335f9d8",
+                        "emoteId": "2"
+                    }
+                },
+                {
+                    "id": "3025a90d-3459-42c0-b083-02baca4b9869",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": "You want to go to\na dog park?",
+                        "avatarId": ""
+                    }
+                },
+                {
+                    "id": "5ef1cd02-bfa3-4317-b5ee-a237789b060c",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": "Sure, buddy. Let's\ngo!",
+                        "avatarId": ""
+                    }
+                },
+                {
+                    "id": "5a526c7c-e245-466c-806e-2c9e50887469",
+                    "command": "EVENT_END"
+                }
+            ]
         }
     ],
     "_version": "1.2.0",
@@ -7623,6 +8023,10 @@
         {
             "id": "18",
             "name": "Lvl2-DiscoveredDogPark"
+        },
+        {
+            "id": "19",
+            "name": "GetAttention"
         }
     ],
     "backgrounds": [
