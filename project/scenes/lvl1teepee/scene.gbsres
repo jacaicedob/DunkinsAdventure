@@ -17,10 +17,17 @@
   "playerSpriteSheetId": "51ce7dac-f513-4c5d-91ef-d249581516d0",
   "script": [
     {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "b6953fcb-3a69-4b0d-adec-ff32710ef70b"
+      },
+      "id": "d579905b-1923-4ba6-a48a-d01ba0b8d9f5"
+    },
+    {
       "id": "e1c47747-a33c-471e-b4fc-9e0cc54d2acf",
       "command": "EVENT_GROUP",
       "args": {
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
