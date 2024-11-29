@@ -112,6 +112,19 @@
                         }
                       },
                       {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "d911094f-dda8-4b6c-aae8-6509f8800dea",
+                          "priority": "medium",
+                          "pitch": 7,
+                          "frequency": 200,
+                          "duration": 0.5,
+                          "wait": true,
+                          "effect": 7
+                        },
+                        "id": "91fa7de5-3aae-49a0-8cc0-0e984748be83"
+                      },
+                      {
                         "id": "756a333c-0f63-47dc-a727-8e3ea90ddaea",
                         "command": "EVENT_ACTOR_MOVE_TO",
                         "args": {
@@ -373,6 +386,19 @@
                     ],
                     "false": [
                       {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "d911094f-dda8-4b6c-aae8-6509f8800dea",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.5,
+                          "wait": true,
+                          "effect": 4
+                        },
+                        "id": "dbe9c398-940f-4ec5-bb6a-76a686e60088"
+                      },
+                      {
                         "id": "a8686cba-bfb0-4d7a-be64-1a9e0df63fd8",
                         "command": "EVENT_ACTOR_EMOTE",
                         "args": {
@@ -410,6 +436,19 @@
                           ],
                           "avatarId": ""
                         }
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "d911094f-dda8-4b6c-aae8-6509f8800dea",
+                          "priority": "medium",
+                          "pitch": 7,
+                          "frequency": 200,
+                          "duration": 0.5,
+                          "wait": true,
+                          "effect": 7
+                        },
+                        "id": "9b957485-251b-4b32-aa8e-bfeeae44bf23"
                       },
                       {
                         "id": "cb8ca8ef-da31-4672-9d2d-a875fb6d2c24",

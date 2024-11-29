@@ -66,6 +66,19 @@
                   }
                 },
                 {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "d911094f-dda8-4b6c-aae8-6509f8800dea",
+                    "priority": "medium",
+                    "pitch": 7,
+                    "frequency": 200,
+                    "duration": 2,
+                    "wait": false,
+                    "effect": 7
+                  },
+                  "id": "8fc8ea5b-92a0-4ff7-86df-eed9252f01a0"
+                },
+                {
                   "id": "5e7069d0-a26d-404b-8761-f50c8a154329",
                   "command": "EVENT_TEXT",
                   "args": {
@@ -169,6 +182,19 @@
             },
             "children": {
               "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "d911094f-dda8-4b6c-aae8-6509f8800dea",
+                    "priority": "medium",
+                    "pitch": 7,
+                    "frequency": 200,
+                    "duration": 2,
+                    "wait": false,
+                    "effect": 7
+                  },
+                  "id": "2f290baf-450f-4a32-be5b-f3a096a6c8e4"
+                },
                 {
                   "id": "ec7da9ea-8bce-4b85-9636-d2f6baeb9619",
                   "command": "EVENT_ACTOR_EMOTE",

@@ -126,6 +126,19 @@
                   }
                 },
                 {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "d911094f-dda8-4b6c-aae8-6509f8800dea",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 3
+                  },
+                  "id": "382a6a2a-6a44-4b34-a2e8-ba9fe854f844"
+                },
+                {
                   "id": "31cf0da0-8d16-435a-bb81-da8969389187",
                   "command": "EVENT_ACTOR_EMOTE",
                   "args": {
@@ -170,6 +183,19 @@
                     "text": "You are!",
                     "avatarId": ""
                   }
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "d911094f-dda8-4b6c-aae8-6509f8800dea",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 3
+                  },
+                  "id": "144de9b9-125c-4347-8e38-12a9e9904651"
                 },
                 {
                   "id": "3b68dfa7-9c30-4c5a-bd5d-1b1e5322fdd7",
@@ -288,6 +314,19 @@
                   }
                 },
                 {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "d911094f-dda8-4b6c-aae8-6509f8800dea",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 3
+                  },
+                  "id": "958d2346-7612-4feb-b94b-54d950f853f9"
+                },
+                {
                   "id": "e27d625a-84ab-453e-af80-51a8752fd495",
                   "command": "EVENT_ACTOR_EMOTE",
                   "args": {
@@ -312,6 +351,27 @@
                       "I'll give you your\ndin-din."
                     ],
                     "avatarId": ""
+                  }
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "d911094f-dda8-4b6c-aae8-6509f8800dea",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 3
+                  },
+                  "id": "ca473618-d421-4b21-a559-63e3f0194006"
+                },
+                {
+                  "id": "2ad9ea1d-3c88-4d0b-bc57-5412692463bd",
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "player",
+                    "emoteId": "9249df2b-f2ac-46cc-8d3d-2e96263e348f"
                   }
                 },
                 {
