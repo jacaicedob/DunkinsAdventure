@@ -1,0 +1,163 @@
+{
+  "_resourceType": "actor",
+  "id": "c2bc7ab0-bd48-4916-8c96-7d77740daf1d",
+  "_index": 0,
+  "symbol": "actor_teddy_0",
+  "prefabId": "",
+  "name": "Teddy",
+  "x": 8,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "8eb98647-10f5-42bd-81f5-a101ff614f97",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "3",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "e8b9c8dd-c67d-452c-a439-ca030d84caa2",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "Grrrr I'm going to\nget you!",
+        "avatarId": ""
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "2ea0796b-b894-4e14-855d-c981d4f56468"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.1
+                  },
+                  "id": "5f79db6d-3aeb-44cd-90f5-1f85acded0c8"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "4e0bef6e-3cfa-40ca-95e4-0b3155dffe9e"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.1
+                  },
+                  "id": "814da066-5147-4987-9b30-b77d0a49d422"
+                }
+              ]
+            },
+            "id": "c8623423-8593-4d78-8eb5-6b0d119106fe"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "d3d2688e-b3b4-4ba1-ab31-807f898980f0"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.1
+                  },
+                  "id": "32ff74f9-1625-4b9f-992e-053eac1caa2b"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "a6feb81e-1e6b-4d2d-8218-a104f02b438c"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.1
+                  },
+                  "id": "35ed62de-f87c-4d47-b57a-5d7d4d2f02d5"
+                }
+              ]
+            },
+            "id": "a65fa04a-e0f3-492b-8ef7-184ca918f8c7"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "7ce24dc0-9056-4cf6-9cac-a6decb13f6f2"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.1
+                  },
+                  "id": "9bbeb92a-8c1c-432d-8267-0fed24629ba8"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "5aaa715f-9212-4090-91fd-e2f39346f66d"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.1
+                  },
+                  "id": "c542e39f-f145-43da-a46e-82a3ef8db0ed"
+                }
+              ]
+            },
+            "id": "6bf3d4eb-c7a6-44d4-a5f3-a07ecb4d4577"
+          }
+        ]
+      },
+      "id": "f68ada96-3540-46e9-8e12-daa589463e33"
+    }
+  ]
+}

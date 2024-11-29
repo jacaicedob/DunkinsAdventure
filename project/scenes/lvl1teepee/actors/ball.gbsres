@@ -1,0 +1,36 @@
+{
+  "_resourceType": "actor",
+  "id": "773ee5c6-89db-4e42-b234-921fc3780396",
+  "_index": 4,
+  "symbol": "actor_ball",
+  "prefabId": "",
+  "name": "Ball",
+  "x": 14,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "1ed35791-8b31-43da-9803-fe4e0341a672",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "a8a034e1-b93e-44a7-973e-ce19697fd56a",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "Boing boing...",
+        "avatarId": ""
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

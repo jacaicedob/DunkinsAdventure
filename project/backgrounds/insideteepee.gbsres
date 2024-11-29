@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "84ca6581-e431-45f4-b55b-f391af1f726d",
+  "name": "InsideTeepee",
+  "symbol": "bg_insideteepee",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "InsideTeepee.png",
+  "tileColors": "",
+  "autoColor": false
+}

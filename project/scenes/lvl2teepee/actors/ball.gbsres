@@ -1,0 +1,163 @@
+{
+  "_resourceType": "actor",
+  "id": "418df99a-221a-4a1a-b372-4e0a38fd507b",
+  "_index": 2,
+  "symbol": "actor_ball_0",
+  "prefabId": "",
+  "name": "Ball",
+  "x": 14,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "1ed35791-8b31-43da-9803-fe4e0341a672",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "3",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "2fe795e5-e960-4cf5-96bd-916aee9c51e6",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "Boing boing...",
+        "avatarId": ""
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "45acad65-dc65-48d5-a4c2-4f8ceaef24c3"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.1
+                  },
+                  "id": "0e0421e0-1d7f-4908-a224-1a8ff1350a95"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "c612d591-245b-4ba3-b299-72791fbb9384"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.1
+                  },
+                  "id": "cbe2cb9a-78e3-4939-9762-469b5fa4d8f6"
+                }
+              ]
+            },
+            "id": "a315b3ab-cbf6-40db-be36-4d7fc33ed8fa"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "d350e906-5040-45ff-9023-352b00586f61"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.1
+                  },
+                  "id": "8d50d692-f47c-4a45-be07-2c5bf75fda52"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "8bb9cb6e-cc7c-43e2-bc87-b05a5554738a"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.1
+                  },
+                  "id": "cdff51fc-9d44-4a9a-af25-ac1e04c0f994"
+                }
+              ]
+            },
+            "id": "a199792a-b5a7-4c20-871a-ab3c6d29e715"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "ae523606-8e53-4f66-8f50-f65183ba6e2b"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.1
+                  },
+                  "id": "b8cee400-f888-48ee-9c3f-85f589a65067"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "25de4780-95f3-4136-bd0c-67e829165a5f"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.1
+                  },
+                  "id": "7beff17b-5359-44d2-a7f7-29c98d4a2625"
+                }
+              ]
+            },
+            "id": "378a9dca-c464-4936-bae4-cf038eec1cf9"
+          }
+        ]
+      },
+      "id": "d42265ef-be27-401f-bd3a-96f0f7968f52"
+    }
+  ]
+}

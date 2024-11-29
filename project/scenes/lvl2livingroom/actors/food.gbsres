@@ -1,0 +1,126 @@
+{
+  "_resourceType": "actor",
+  "id": "04694ad0-a3d5-4366-b97b-501456406ca9",
+  "_index": 2,
+  "symbol": "actor_food_0",
+  "prefabId": "",
+  "name": "Food",
+  "x": 18,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "514042b2-20d4-4127-aec9-562c8f642c95",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "9199c80e-ef43-42e4-9d5b-d7522a065ed1",
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "Eat",
+        "option2": "Drink",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "menu"
+      }
+    },
+    {
+      "id": "e0dffd61-d8e2-413c-a6eb-64252dad2690",
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "L0",
+        "choices": 2,
+        "__collapseCase0": false,
+        "value0": 1,
+        "__collapseCase1": false,
+        "value1": 2,
+        "__collapseCase2": false,
+        "value2": 0,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false
+      },
+      "children": {
+        "true0": [
+          {
+            "id": "595fc6cf-8d47-4a6d-8ffe-56450e9108ca",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Bowl is empty"
+              ],
+              "avatarId": ""
+            }
+          }
+        ],
+        "true1": [
+          {
+            "id": "5171c78b-4969-4f08-a067-64895b910f6b",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "Slurp slurp",
+              "avatarId": ""
+            }
+          }
+        ],
+        "true2": [],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

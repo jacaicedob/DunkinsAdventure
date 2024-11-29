@@ -1,0 +1,260 @@
+{
+  "_resourceType": "actor",
+  "id": "daa519bf-aa2b-424f-b062-997231017dfe",
+  "_index": 2,
+  "symbol": "actor_0",
+  "prefabId": "",
+  "name": "",
+  "x": 8,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "514042b2-20d4-4127-aec9-562c8f642c95",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "11511d5c-c800-4dcc-a67f-998f1a5f0856",
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "4"
+      }
+    },
+    {
+      "id": "bb94bada-1154-47b6-85cc-92d90eaf9dbb",
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "4",
+        "operator": "==",
+        "comparator": 4,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "4"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "901e01ab-5751-4280-b0b5-dd343616e89a",
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Show Bone"
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "0dbdd111-cb82-43ea-9bea-6de6ff222d98",
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "player",
+                    "emoteId": "81f45bd5-89fd-4c10-a1d2-4342fc91a723"
+                  }
+                },
+                {
+                  "id": "2f20d4cc-a0ed-4bcd-8577-03ad0b7baf70",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "You found your\nbone!",
+                    "avatarId": ""
+                  }
+                },
+                {
+                  "id": "5d6b18b7-84da-4c93-a3bd-fa40125f8642",
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "a1435e4c-42f3-4181-b0ff-718ffd674cef",
+                    "x": {
+                      "type": "number",
+                      "value": 8
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "useCollisions": false,
+                    "verticalFirst": false
+                  }
+                },
+                {
+                  "id": "01ca4929-cf63-4d9f-8bb8-c3fd9fb11568",
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "a1435e4c-42f3-4181-b0ff-718ffd674cef"
+                  }
+                },
+                {
+                  "id": "4a69985b-e61b-4646-9506-0f8be8be0f43",
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "a1435e4c-42f3-4181-b0ff-718ffd674cef",
+                    "x": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 16
+                    },
+                    "useCollisions": false,
+                    "verticalFirst": false,
+                    "moveType": "diagonal"
+                  }
+                },
+                {
+                  "id": "6c31be50-73c2-4e14-bd17-1ec1e93ae5d6",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "7",
+                    "value": {
+                      "type": "true"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "c128eb4d-0f32-4bfe-8548-33cf0ba086a4"
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "0e8a18dd-ccd7-4d60-9b8d-af611bb8eec7",
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "4",
+        "operator": "==",
+        "comparator": 8,
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "4"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 8
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "97e8daad-1f9f-4e32-b42f-818c645982b5",
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Show Teddy"
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "6e5ad0e5-3af9-43fe-b669-f272714ef519",
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "player",
+                    "emoteId": "81f45bd5-89fd-4c10-a1d2-4342fc91a723"
+                  }
+                },
+                {
+                  "id": "1d6ba767-b69f-479e-b894-b181a0b13f9a",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "You found your\nteddy bear!",
+                    "avatarId": ""
+                  }
+                },
+                {
+                  "id": "c01eb6d4-bbfd-4714-827c-27c72c837ded",
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "68fe7e29-0f6b-4c32-a712-0e5e5413e6b1",
+                    "x": {
+                      "type": "number",
+                      "value": 8
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "useCollisions": false,
+                    "verticalFirst": false
+                  }
+                },
+                {
+                  "id": "df1211bc-f27f-45d6-aafd-9ea423eed771",
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "68fe7e29-0f6b-4c32-a712-0e5e5413e6b1"
+                  }
+                },
+                {
+                  "id": "1a6f0c2d-2530-435e-a943-6f8d133c0a23",
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "68fe7e29-0f6b-4c32-a712-0e5e5413e6b1",
+                    "x": {
+                      "type": "number",
+                      "value": 4
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 16
+                    },
+                    "useCollisions": false,
+                    "verticalFirst": false,
+                    "moveType": "diagonal"
+                  }
+                },
+                {
+                  "id": "a1ce150f-8236-4c9d-82fc-db2021c0fdb8",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "6",
+                    "value": {
+                      "type": "true"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "94a19548-1af1-4f7a-910e-8934c608f597"
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

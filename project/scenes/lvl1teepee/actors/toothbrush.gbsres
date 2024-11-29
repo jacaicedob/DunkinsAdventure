@@ -1,0 +1,94 @@
+{
+  "_resourceType": "actor",
+  "id": "b1316581-b222-4486-a1d5-5fecfb929cdf",
+  "_index": 2,
+  "symbol": "actor_toothbrush",
+  "prefabId": "",
+  "name": "Toothbrush",
+  "x": 5,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "95a8925a-f24f-4fa4-b609-07534a16aac4",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "2678ac3a-faa6-45bd-a413-3fcc896bb36f",
+      "command": "EVENT_CLEAR_FLAGS",
+      "args": {
+        "variable": "0",
+        "flag1": false,
+        "flag2": false,
+        "flag3": false,
+        "flag4": true,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "__comment": false
+      }
+    },
+    {
+      "id": "f9c53354-34dc-4774-8dc9-b8073ca094be",
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      }
+    },
+    {
+      "id": "dc543d7c-8f18-4bb5-b4f9-c2007dc1eaf5",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "dd4fe455-5827-4928-86bc-ba218d628c44",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "true"
+        }
+      }
+    },
+    {
+      "id": "f7a314a1-6cfb-4aaa-93fb-739f18763f94",
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "5",
+        "flag1": false,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": true,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false
+      }
+    },
+    {
+      "id": "9b743be6-a236-4045-8b64-46215d100cd8",
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "10"
+      },
+      "__type": "event"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

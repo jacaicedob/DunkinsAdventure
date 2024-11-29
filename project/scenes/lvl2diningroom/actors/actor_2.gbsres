@@ -1,0 +1,46 @@
+{
+  "_resourceType": "actor",
+  "id": "6ce8f40a-2364-4609-bfa5-085e5783de32",
+  "_index": 1,
+  "symbol": "actor_27",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 4,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "514042b2-20d4-4127-aec9-562c8f642c95",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "af43f2ea-46b2-41d9-84e6-3eaa579c0e85",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "It's a bookshelf.",
+        "avatarId": ""
+      }
+    },
+    {
+      "id": "59c37ae9-c06c-4287-90e2-a44f777db0a7",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Nothing but\npictures."
+        ],
+        "avatarId": ""
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

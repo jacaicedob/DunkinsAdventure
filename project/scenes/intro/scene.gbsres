@@ -1,0 +1,124 @@
+{
+  "_resourceType": "scene",
+  "id": "e0058ade-abc3-45ed-9cb3-0eb8c417367a",
+  "_index": 6,
+  "type": "TOPDOWN",
+  "name": "Intro",
+  "symbol": "scene_intro",
+  "x": 480,
+  "y": 440,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "402e541e-0f45-49f6-9a4f-f59409829609",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4a9ad288-d160-40f2-8ccd-de3d40e25717",
+  "script": [
+    {
+      "id": "59edae94-6b69-4b8c-878f-88a00c69c2ae",
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "80f21c89-dfa0-47b1-98de-1b2ada163fa7",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Dunkin is a good\ndog who lives with\nhis Mommy and Papa"
+        ],
+        "avatarId": ""
+      }
+    },
+    {
+      "id": "e44f5eee-f76f-4954-9e48-7b5387cbee3b",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "He likes to play\nwith his toys"
+        ],
+        "avatarId": ""
+      },
+      "__type": "event"
+    },
+    {
+      "id": "db2b35d1-8c29-4ae7-9e33-43037d0c5f6d",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "and take a nap\nafter eating his\nfavorite snack..."
+        ],
+        "avatarId": ""
+      },
+      "__type": "event"
+    },
+    {
+      "id": "d14ccfc4-97a1-4353-8f88-5d661e317e79",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "He gets away with\npretty much\nanything"
+        ],
+        "avatarId": ""
+      },
+      "__type": "event"
+    },
+    {
+      "id": "725176fe-2da0-4740-b92a-0812569dd244",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "although some\ntimes he has to be\npersistent."
+        ],
+        "avatarId": ""
+      },
+      "__type": "event"
+    },
+    {
+      "id": "d809d901-3e48-46c7-94f1-9dc4ec39a590",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Your task is to\nhelp him do his\nfavorite things."
+        ],
+        "avatarId": ""
+      },
+      "__type": "event"
+    },
+    {
+      "id": "4003e842-fcd7-472e-bff1-e01b89e6f02e",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Good luck!"
+        ],
+        "avatarId": ""
+      },
+      "__type": "event"
+    },
+    {
+      "id": "2877c9d3-4de2-4961-bfeb-907bc293b52f",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "8e15a732-9cf0-4de5-9730-74fc11c9f0a2",
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

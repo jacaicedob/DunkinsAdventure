@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "f229060f-d99b-4127-ad84-56d0b2e07da4",
+  "name": "Dogpark",
+  "symbol": "bg_dogpark",
+  "width": 32,
+  "height": 32,
+  "imageWidth": 256,
+  "imageHeight": 256,
+  "filename": "Dogpark.png",
+  "tileColors": "",
+  "autoColor": false
+}

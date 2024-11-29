@@ -1,0 +1,53 @@
+{
+  "_resourceType": "scene",
+  "id": "7166ff67-7dc5-4596-8af4-870c169ce542",
+  "_index": 11,
+  "type": "TOPDOWN",
+  "name": "Lvl2Quests",
+  "symbol": "scene_lvl2quests",
+  "x": 1045.9045827820285,
+  "y": 244.9702848598761,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "402e541e-0f45-49f6-9a4f-f59409829609",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "ef07ddda-8151-41c1-884a-37efeccf99e5",
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "741155dc-c53f-4dab-9e1f-c4594c194002",
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "b",
+          "start",
+          "select"
+        ],
+        "__collapse": false
+      },
+      "__type": "event"
+    },
+    {
+      "id": "d92a3fa5-31b1-41aa-b7c9-a1e8a9e5ccca",
+      "command": "EVENT_SCENE_POP_STATE",
+      "args": {
+        "fadeSpeed": "2",
+        "__collapse": true
+      },
+      "__type": "event"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

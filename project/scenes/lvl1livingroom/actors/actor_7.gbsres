@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "fc4b44f6-1583-45b4-84dc-f9fae0c83034",
+  "_index": 8,
+  "symbol": "actor_6",
+  "prefabId": "",
+  "name": "",
+  "x": 1,
+  "y": 16,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "514042b2-20d4-4127-aec9-562c8f642c95",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "That's a strange \nlooking fan."
+        ],
+        "avatarId": ""
+      },
+      "id": "0e049728-8368-4a3c-9068-e814a917b4b4"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

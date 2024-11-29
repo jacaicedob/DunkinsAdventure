@@ -1,0 +1,36 @@
+{
+  "_resourceType": "actor",
+  "id": "7d0fd154-a670-4291-b93d-30a16c2055b4",
+  "_index": 3,
+  "symbol": "actor_bone",
+  "prefabId": "",
+  "name": "Bone",
+  "x": 14,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "84e8f5e4-e71c-48a7-b17d-95a840479488",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "c5565944-0868-4da1-9bf8-3a085cbfaf4e",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "Lick lick...",
+        "avatarId": ""
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

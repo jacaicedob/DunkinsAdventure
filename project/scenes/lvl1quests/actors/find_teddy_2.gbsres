@@ -1,0 +1,53 @@
+{
+  "_resourceType": "actor",
+  "id": "3b3faedb-0ec7-49e6-9fec-b307b2807998",
+  "_index": 1,
+  "symbol": "actor_find_teddy_0",
+  "prefabId": "",
+  "name": "Find Teddy",
+  "x": 2,
+  "y": 6,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "f8998789-15d9-4edc-9364-abf5c422277d",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "5",
+        "flag": 1,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              }
+            },
+            "id": "5a1ee2b0-9aaf-4f2e-b6ca-82b3051a4b0c"
+          }
+        ],
+        "false": []
+      },
+      "id": "af89e993-6e7a-4ca8-bd43-66ba4e5dc718"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

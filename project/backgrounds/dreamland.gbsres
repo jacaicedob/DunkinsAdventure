@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "aaf3a778-fb3b-4081-a158-8665b497b46f",
+  "name": "Dreamland",
+  "symbol": "bg_dreamland",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "Dreamland.png",
+  "tileColors": "",
+  "autoColor": false
+}

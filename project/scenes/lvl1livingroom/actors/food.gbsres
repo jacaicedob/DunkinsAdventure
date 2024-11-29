@@ -1,0 +1,224 @@
+{
+  "_resourceType": "actor",
+  "id": "eefa76f3-67f5-41bb-94e1-58064d7d33f8",
+  "_index": 1,
+  "symbol": "actor_food",
+  "prefabId": "",
+  "name": "Food",
+  "x": 18,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "514042b2-20d4-4127-aec9-562c8f642c95",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "6aacc271-a4de-4e68-b000-4d8a9a8613d9",
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "Eat",
+        "option2": "Drink",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "menu"
+      }
+    },
+    {
+      "id": "e7c3af75-b075-49d9-ad30-6214b1171445",
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "L0",
+        "choices": 2,
+        "__collapseCase0": false,
+        "value0": 1,
+        "__collapseCase1": false,
+        "value1": 2,
+        "__collapseCase2": false,
+        "value2": 0,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false
+      },
+      "children": {
+        "true0": [
+          {
+            "id": "c80424bf-79b8-42e7-9a7c-b4b2c0e5eeab",
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "3",
+              "__collapseElse": false,
+              "condition": {
+                "type": "variable",
+                "value": "3"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "8fe55ea1-d9f9-4c93-91f2-a40f51f21ce5",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "There is yummy\nfood here!",
+                    "avatarId": ""
+                  }
+                },
+                {
+                  "id": "75773252-2b02-47a2-a3c9-692340699ce0",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "Nom nom nom!",
+                    "avatarId": ""
+                  }
+                },
+                {
+                  "id": "a0c740cc-3387-4c76-9083-a584c436c7aa",
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "player",
+                    "emoteId": "9249df2b-f2ac-46cc-8d3d-2e96263e348f"
+                  }
+                },
+                {
+                  "id": "b57a1249-9756-46e0-be7b-8174efe19b56",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "3",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                {
+                  "id": "19384513-5654-4bba-aa9f-ce6e217da747",
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "5",
+                    "flag": 3,
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [],
+                    "false": [
+                      {
+                        "id": "0b63a7f4-19b4-4cba-ab01-d555cd4c7558",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "10"
+                        },
+                        "__type": "event"
+                      },
+                      {
+                        "id": "4020f967-db1b-4cd4-b4d1-7b52133b6893",
+                        "command": "EVENT_ADD_FLAGS",
+                        "args": {
+                          "variable": "5",
+                          "flag1": false,
+                          "flag2": false,
+                          "flag3": false,
+                          "flag4": true,
+                          "flag5": false,
+                          "flag6": false,
+                          "flag7": false,
+                          "flag8": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "6310dc35-1caf-4727-a7a9-f9ac61d35fca",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Bowl is empty"
+                    ],
+                    "avatarId": ""
+                  }
+                },
+                {
+                  "id": "d8ecb1ba-223c-470c-bb40-f3ad7928fe80",
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "player",
+                    "emoteId": "05145ab3-fd34-4cdd-9c62-770fe0716453"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "true1": [
+          {
+            "id": "03b5609a-1d4c-4d4c-a104-b1d30ab93c77",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "Slurp slurp",
+              "avatarId": ""
+            }
+          }
+        ],
+        "true2": [],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

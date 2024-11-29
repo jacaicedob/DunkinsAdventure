@@ -1,0 +1,80 @@
+{
+  "_resourceType": "actor",
+  "id": "85dbf421-fa17-4cef-a9e1-a2680b8e3620",
+  "_index": 8,
+  "symbol": "actor_15",
+  "prefabId": "",
+  "name": "",
+  "x": 15,
+  "y": 8,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "95a8925a-f24f-4fa4-b609-07534a16aac4",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 3,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "08131270-95f5-46c0-8857-47b959fb1ade",
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "0",
+        "flag1": false,
+        "flag2": false,
+        "flag3": false,
+        "flag4": true,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false
+      }
+    },
+    {
+      "id": "67fac1cc-22f9-45c7-bc20-de8f1a9b36bb",
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      }
+    },
+    {
+      "id": "868cb78a-befc-4fd1-9bba-09ce11de01be",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "12",
+        "value": {
+          "type": "true"
+        }
+      }
+    },
+    {
+      "id": "e5c66c05-3f73-4460-8d5b-bc5e10039cb9",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "14",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Go eat it in\nyour teepee."
+        ],
+        "avatarId": "b9e4d322-1724-4b8d-973c-ab8e9b1c064a"
+      },
+      "id": "756fb7e6-59da-48fb-81fc-58dc13240875"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

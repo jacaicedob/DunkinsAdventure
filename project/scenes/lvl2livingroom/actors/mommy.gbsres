@@ -1,0 +1,241 @@
+{
+  "_resourceType": "actor",
+  "id": "e94544aa-6729-40b1-86b7-e6d0f5c986fa",
+  "_index": 1,
+  "symbol": "actor_mommy",
+  "prefabId": "",
+  "name": "Mommy",
+  "x": 10,
+  "y": 6,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "34a53c8d-a453-477d-93d2-5dc5ccbb3956",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "id": "075a8eae-0421-4c97-b671-30789c98463a",
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "L0"
+            }
+          },
+          {
+            "id": "4a326f2a-8ff4-443b-99f8-1ca8e3d8bfe4",
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "L0",
+              "choices": 2,
+              "__collapseCase0": false,
+              "value0": 1,
+              "__collapseCase1": false,
+              "value1": 2,
+              "__collapseCase2": false,
+              "value2": 3,
+              "__collapseCase3": false,
+              "value3": 4,
+              "__collapseCase4": false,
+              "value4": 5,
+              "__collapseCase5": false,
+              "value5": 6,
+              "__collapseCase6": false,
+              "value6": 7,
+              "__collapseCase7": false,
+              "value7": 8,
+              "__collapseCase8": false,
+              "value8": 9,
+              "__collapseCase9": false,
+              "value9": 10,
+              "__collapseCase10": false,
+              "value10": 11,
+              "__collapseCase11": false,
+              "value11": 12,
+              "__collapseCase12": false,
+              "value12": 13,
+              "__collapseCase13": false,
+              "value13": 14,
+              "__collapseCase14": false,
+              "value14": 15,
+              "__collapseCase15": false,
+              "value15": 16,
+              "__collapseElse": false
+            },
+            "children": {
+              "true0": [
+                {
+                  "id": "c392023f-8af9-48b5-8a66-bef34a7959e4",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Hi there! "
+                    ],
+                    "avatarId": ""
+                  }
+                }
+              ],
+              "true1": [
+                {
+                  "id": "a31f0475-268a-4a44-9da3-a15d9b843310",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Did you\nhave a\nnice dream?"
+                    ],
+                    "avatarId": ""
+                  }
+                },
+                {
+                  "id": "e67e61bb-9045-4828-b6e8-db5eb4d88f4d",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "It looked like you\nwere playing...",
+                    "avatarId": ""
+                  }
+                }
+              ],
+              "true2": [],
+              "true3": [],
+              "true4": [],
+              "true5": [],
+              "true6": [],
+              "true7": [],
+              "true8": [],
+              "true9": [],
+              "true10": [],
+              "true11": [],
+              "true12": [],
+              "true13": [],
+              "true14": [],
+              "true15": [],
+              "false": []
+            }
+          }
+        ]
+      },
+      "id": "d1bb9e78-55ef-40e7-8d33-76e011644ec5"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "id": "158adeca-d0f1-4691-9cef-13ea3292de6d",
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "L0"
+            }
+          },
+          {
+            "id": "837123d5-0af0-4ed5-972b-57747ef4c261",
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "L0",
+              "choices": 2,
+              "__collapseCase0": false,
+              "value0": 1,
+              "__collapseCase1": false,
+              "value1": 2,
+              "__collapseCase2": false,
+              "value2": 3,
+              "__collapseCase3": false,
+              "value3": 4,
+              "__collapseCase4": false,
+              "value4": 5,
+              "__collapseCase5": false,
+              "value5": 6,
+              "__collapseCase6": false,
+              "value6": 7,
+              "__collapseCase7": false,
+              "value7": 8,
+              "__collapseCase8": false,
+              "value8": 9,
+              "__collapseCase9": false,
+              "value9": 10,
+              "__collapseCase10": false,
+              "value10": 11,
+              "__collapseCase11": false,
+              "value11": 12,
+              "__collapseCase12": false,
+              "value12": 13,
+              "__collapseCase13": false,
+              "value13": 14,
+              "__collapseCase14": false,
+              "value14": 15,
+              "__collapseCase15": false,
+              "value15": 16,
+              "__collapseElse": false
+            },
+            "children": {
+              "true0": [
+                {
+                  "id": "41a73bc6-d801-4afc-8937-6ef8364e862a",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Hi there! "
+                    ],
+                    "avatarId": ""
+                  }
+                }
+              ],
+              "true1": [
+                {
+                  "id": "54842016-2103-4bb0-ae5b-db07717a9308",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Did you\nhave a\nnice dream?"
+                    ],
+                    "avatarId": ""
+                  }
+                },
+                {
+                  "id": "571f4c8b-05f1-44d0-932a-743447cd261e",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "It looked like you\nwere playing...",
+                    "avatarId": ""
+                  }
+                }
+              ],
+              "true2": [],
+              "true3": [],
+              "true4": [],
+              "true5": [],
+              "true6": [],
+              "true7": [],
+              "true8": [],
+              "true9": [],
+              "true10": [],
+              "true11": [],
+              "true12": [],
+              "true13": [],
+              "true14": [],
+              "true15": [],
+              "false": []
+            }
+          }
+        ]
+      },
+      "id": "d920bebb-6f9a-4c9f-a047-e830ed824172"
+    }
+  ]
+}

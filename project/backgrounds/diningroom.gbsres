@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "9f7aa874-fb33-4106-9945-52685b08c542",
+  "name": "DiningRoom",
+  "symbol": "bg_diningroom",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "DiningRoom.png",
+  "tileColors": "",
+  "autoColor": false
+}

@@ -1,0 +1,204 @@
+{
+  "_resourceType": "actor",
+  "id": "730e1e67-c437-4c82-a858-409bd9d4ae80",
+  "_index": 0,
+  "symbol": "actor_26",
+  "prefabId": "",
+  "name": "",
+  "x": 3,
+  "y": 4,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "514042b2-20d4-4127-aec9-562c8f642c95",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "c469142a-ba16-4f21-86db-42f070013bcd",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The computer is\non!"
+        ],
+        "avatarId": ""
+      }
+    },
+    {
+      "id": "50a92798-f683-4b90-b8a1-ac71a88d5579",
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "Search",
+        "option2": "Exit",
+        "option3": "Exit",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "dialogue",
+        "cancelOnLastOption": true
+      }
+    },
+    {
+      "id": "c34dc9b4-5a74-4acb-8fee-9e3a9a871cf5",
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "operator": "==",
+        "comparator": 1,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "09a4a3e2-ef80-47cb-b74d-49fd7b9fe8b6",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "Searching for\n\"dogs\"...",
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "ec4ab4e6-7a8e-4b30-8cc3-10ccd9094ae5",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "There are a lot\nof\nresults...",
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "c72fade3-48ac-4bfa-8455-208a48e22073",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "How about \"dog\nplayground\"?",
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "d1564cd9-9309-4b50-a477-d30108c3d9fb",
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "player",
+              "emoteId": "81f45bd5-89fd-4c10-a1d2-4342fc91a723"
+            }
+          },
+          {
+            "id": "a583f7e4-b75e-46f6-bd2d-9e90cbdf55b9",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The top result is\n\"dog park\"..."
+              ],
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "895dcb07-7ee4-4d90-b56e-9779d630acc0",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "I need to go\nthere!",
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "983891a3-b054-47d1-924b-137ae169b38f",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "I need to tell\nMommy and Papa!",
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "1cc7d756-6f91-4ae9-8ea1-516ccdad0f96",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "If they don't\nlisten to me",
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "ce407575-40a6-47bb-9fb1-242ea21b6df8",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I should bark to\nget their\nattention."
+              ],
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "5fe3ef35-b80d-4a60-ad42-9012e6f5cc16",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "18",
+              "value": {
+                "type": "true"
+              }
+            }
+          },
+          {
+            "id": "71e8f82f-a4e9-497a-8674-7cd932554875",
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 3
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "useCollisions": false,
+              "verticalFirst": false
+            }
+          },
+          {
+            "id": "190bac4b-b2b6-46ff-a4fd-5539a4c1cb5d",
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 18
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "useCollisions": false,
+              "verticalFirst": false
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,9 @@
+{
+  "_resourceType": "emote",
+  "id": "cc09d1b3-a94d-413f-a1cd-d89d4c0a933c",
+  "name": "pause",
+  "symbol": "emote_pause",
+  "width": 16,
+  "height": 16,
+  "filename": "pause.png"
+}

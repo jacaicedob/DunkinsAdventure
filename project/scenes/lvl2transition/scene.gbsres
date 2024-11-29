@@ -1,0 +1,47 @@
+{
+  "_resourceType": "scene",
+  "id": "55a221e5-e5d3-4358-956f-2ddc08ee49c6",
+  "_index": 13,
+  "type": "TOPDOWN",
+  "name": "Lvl2Transition",
+  "symbol": "scene_lvl2transition",
+  "x": 875.8138634974061,
+  "y": 628.8692389309514,
+  "width": 32,
+  "height": 18,
+  "backgroundId": "28f04c7c-5398-4675-8a37-2d9074a88684",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "e57be315-98e9-406b-a429-9b77d85ac747",
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "e94a7551-f953-45e5-864d-cb850fe31ce3",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "a866aed3-2df7-4d77-a39a-9f9cea8ec0a5",
+        "x": {
+          "type": "number",
+          "value": 6
+        },
+        "y": {
+          "type": "number",
+          "value": 4
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00240+"
+}

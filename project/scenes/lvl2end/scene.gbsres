@@ -1,0 +1,183 @@
+{
+  "_resourceType": "scene",
+  "id": "6283943e-8a44-4df4-91bf-d1e81e7ac91d",
+  "_index": 12,
+  "type": "TOPDOWN",
+  "name": "Lvl2End",
+  "symbol": "scene_lvl2end",
+  "x": 676.4595369094859,
+  "y": 629.2213344792177,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "9f7aa874-fb33-4106-9945-52685b08c542",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "51ce7dac-f513-4c5d-91ef-d249581516d0",
+  "script": [
+    {
+      "id": "de5655a0-2b46-4450-9b78-365d8d09b722",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        },
+        "useCollisions": false,
+        "verticalFirst": false
+      }
+    },
+    {
+      "command": "EVENT_ACTOR_SET_SPRITE",
+      "args": {
+        "actorId": "$self$",
+        "spriteSheetId": "33cfec1c-fd05-439c-80c9-167e36d67f4d"
+      },
+      "id": "03244bbc-d938-4374-8585-65e90b1439ef"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "2c5cb3dc-23b2-4c9b-9004-0faeac0575c9"
+    },
+    {
+      "id": "6f4220f5-c1c7-4bf7-9665-1880e24258c6",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "afa67fdb-9d62-459d-9554-f827ba57eb20",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        },
+        "useCollisions": false,
+        "verticalFirst": false
+      }
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "afa67fdb-9d62-459d-9554-f827ba57eb20",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "45df6eae-77ce-4227-b434-5eca449bf32f"
+    },
+    {
+      "id": "6d6b0f32-0233-43a1-a94e-5ea644127e1a",
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "643c5f8d-cb7b-45de-a41f-87b66335f9d8",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        },
+        "useCollisions": false,
+        "verticalFirst": false
+      }
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "643c5f8d-cb7b-45de-a41f-87b66335f9d8",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "35e63b7a-d0f6-4a26-a929-822c8aa301fc"
+    },
+    {
+      "id": "6e188120-213d-4148-a9e9-22cdb0e3024a",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "What is this?",
+        "avatarId": "b9e4d322-1724-4b8d-973c-ab8e9b1c064a"
+      }
+    },
+    {
+      "id": "0cfd25e1-85ce-4c81-bcd1-9add33cd16b0",
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "afa67fdb-9d62-459d-9554-f827ba57eb20",
+        "emoteId": "81f45bd5-89fd-4c10-a1d2-4342fc91a723"
+      }
+    },
+    {
+      "id": "403ec8d2-5002-4d78-bf21-5742dfd375f3",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You looked up\nsomething?"
+        ],
+        "avatarId": "e8acfb66-a51f-406d-ae1f-2818e397677f"
+      }
+    },
+    {
+      "id": "eff2930c-0dda-447d-b841-7260d773139a",
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "643c5f8d-cb7b-45de-a41f-87b66335f9d8",
+        "emoteId": "9249df2b-f2ac-46cc-8d3d-2e96263e348f"
+      }
+    },
+    {
+      "id": "3025a90d-3459-42c0-b083-02baca4b9869",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "You want to go\nto\na dog park?",
+        "avatarId": "b9e4d322-1724-4b8d-973c-ab8e9b1c064a"
+      }
+    },
+    {
+      "id": "5ef1cd02-bfa3-4317-b5ee-a237789b060c",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "Sure, buddy.\nLet's\ngo!",
+        "avatarId": "e8acfb66-a51f-406d-ae1f-2818e397677f"
+      }
+    },
+    {
+      "id": "d26da21c-ec75-4c98-8c3a-078cba9f4cff",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "a866aed3-2df7-4d77-a39a-9f9cea8ec0a5",
+        "x": {
+          "type": "number",
+          "value": 3
+        },
+        "y": {
+          "type": "number",
+          "value": 3
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0064+0f2+004+0f3+003+0f5+00!0f2+009+0f3+005+0f!0045+0f6+00e+0f!004+0f!00e+0f!004+0f!00e+0f!004+0f!00e+0f6+0043+"
+}

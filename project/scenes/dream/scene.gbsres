@@ -1,0 +1,48 @@
+{
+  "_resourceType": "scene",
+  "id": "480c50a0-dd25-486e-aef2-77b06793b7af",
+  "_index": 7,
+  "type": "TOPDOWN",
+  "name": "Dream",
+  "symbol": "scene_dream",
+  "x": 478.37572139904466,
+  "y": 249.17930607426183,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "aaf3a778-fb3b-4081-a158-8665b497b46f",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "51ce7dac-f513-4c5d-91ef-d249581516d0",
+  "script": [
+    {
+      "id": "4c599049-4e24-4e68-81a6-8728ae2d546b",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "This is a nice\ndream!",
+        "avatarId": ""
+      }
+    },
+    {
+      "id": "c3d3fb45-45b4-4935-9167-b2a2e4fd865d",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "Full of many\ndoggie friends.",
+        "avatarId": ""
+      }
+    },
+    {
+      "id": "922c15c0-3663-4e48-a7fd-349885b37745",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "Say hi to them\nall!",
+        "avatarId": ""
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f15+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

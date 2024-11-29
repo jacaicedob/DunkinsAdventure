@@ -1,0 +1,36 @@
+{
+  "_resourceType": "actor",
+  "id": "122f34bc-733e-4201-a94a-bcb5ca8c4e0d",
+  "_index": 1,
+  "symbol": "actor_teddy",
+  "prefabId": "",
+  "name": "Teddy",
+  "x": 8,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "8eb98647-10f5-42bd-81f5-a101ff614f97",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "d946a46b-c65b-4e1d-b36c-215091c48704",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "Grrrr I'm going to\nget you!",
+        "avatarId": ""
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}
