@@ -124,7 +124,7 @@
                                   "3",
                                   "2"
                                 ],
-                                "__collapse": true,
+                                "__collapse": false,
                                 "loopAnim": true,
                                 "destroyOnHit": true
                               },
@@ -172,7 +172,7 @@
                                   "2",
                                   "1"
                                 ],
-                                "__collapse": true,
+                                "__collapse": false,
                                 "loopAnim": true,
                                 "destroyOnHit": true
                               },

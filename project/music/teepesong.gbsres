@@ -1,9 +1,9 @@
 {
   "_resourceType": "music",
   "id": "b6953fcb-3a69-4b0d-adec-ff32710ef70b",
-  "name": "song_template",
+  "name": "TeepeSong",
   "symbol": "song_song_template",
-  "filename": "song_template.uge",
+  "filename": "TeepeSong.uge",
   "settings": {},
   "type": "uge"
 }

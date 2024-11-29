@@ -17,6 +17,13 @@
   "playerSpriteSheetId": "4a9ad288-d160-40f2-8ccd-de3d40e25717",
   "script": [
     {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "b6953fcb-3a69-4b0d-adec-ff32710ef70b"
+      },
+      "id": "742ab96d-2462-4db8-a90c-8ee0dff6e84b"
+    },
+    {
       "id": "59edae94-6b69-4b8c-878f-88a00c69c2ae",
       "command": "EVENT_ACTOR_DEACTIVATE",
       "args": {
