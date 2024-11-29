@@ -5,8 +5,8 @@
   "type": "TOPDOWN",
   "name": "Dog Park",
   "symbol": "scene_dog_park",
-  "x": 1148.4173386475334,
-  "y": 634.4065462476556,
+  "x": 1152,
+  "y": 632,
   "width": 32,
   "height": 32,
   "backgroundId": "f229060f-d99b-4127-ad84-56d0b2e07da4",
@@ -22,7 +22,7 @@
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -34,7 +34,7 @@
               ],
               "override": true,
               "__scriptTabs": "press",
-              "__collapse": false
+              "__collapse": true
             },
             "children": {
               "true": [
@@ -239,6 +239,102 @@
         ]
       },
       "id": "83897c5d-83b9-43c5-97f6-ff76533ddf48"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "We're here buddy!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "454d61fa-95db-4032-b379-140e2ca04939"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Go play with that\ndoggie over there"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "46e2a846-da77-4ecc-a15b-b155c32c5eae"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Bark and run away\nso he can chase\nyou!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "e758af87-f138-4617-928a-be9da08a5802"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 1,
+        "duration": 1,
+        "frames": 30,
+        "__scriptTabs": "end"
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "21"
+            },
+            "id": "67618554-5794-40f6-891a-b7a5784314c6"
+          }
+        ]
+      },
+      "id": "a7162977-35ed-4239-836c-060c4ab43a57"
     }
   ],
   "playerHit1Script": [],

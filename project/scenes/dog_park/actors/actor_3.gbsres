@@ -242,7 +242,8 @@
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__comment": true
+        "__comment": true,
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -395,7 +396,7 @@
         "variable": "L4",
         "__collapseElse": true,
         "__disableElse": true,
-        "__collapse": false,
+        "__collapse": true,
         "condition": {
           "type": "variable",
           "value": "L4"

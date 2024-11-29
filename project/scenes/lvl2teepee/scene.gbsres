@@ -32,7 +32,8 @@
                 "select"
               ],
               "__collapse": true,
-              "persist": true
+              "persist": true,
+              "__comment": true
             },
             "children": {
               "true": [

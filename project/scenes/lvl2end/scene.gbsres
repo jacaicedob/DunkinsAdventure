@@ -135,6 +135,19 @@
       }
     },
     {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "d911094f-dda8-4b6c-aae8-6509f8800dea",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 7
+      },
+      "id": "72fd8c2a-8c8d-40d9-b62d-fd1b24c8a1f0"
+    },
+    {
       "id": "eff2930c-0dda-447d-b841-7260d773139a",
       "command": "EVENT_ACTOR_EMOTE",
       "args": {
@@ -159,17 +172,38 @@
       }
     },
     {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "d911094f-dda8-4b6c-aae8-6509f8800dea",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 7
+      },
+      "id": "426db760-f838-4cf8-a090-f641b2351e0e"
+    },
+    {
+      "id": "75a069fa-28c0-4410-abb8-b4a9cbafff8a",
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "player",
+        "emoteId": "9249df2b-f2ac-46cc-8d3d-2e96263e348f"
+      }
+    },
+    {
       "id": "d26da21c-ec75-4c98-8c3a-078cba9f4cff",
       "command": "EVENT_SWITCH_SCENE",
       "args": {
         "sceneId": "a866aed3-2df7-4d77-a39a-9f9cea8ec0a5",
         "x": {
           "type": "number",
-          "value": 3
+          "value": 4
         },
         "y": {
           "type": "number",
-          "value": 3
+          "value": 5
         },
         "direction": "",
         "fadeSpeed": "2"

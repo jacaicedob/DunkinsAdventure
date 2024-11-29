@@ -5,8 +5,8 @@
   "type": "TOPDOWN",
   "name": "Lvl2DiningRoom",
   "symbol": "scene_lvl2diningroom",
-  "x": 677.164584706953,
-  "y": 443.79376374548065,
+  "x": 680,
+  "y": 440,
   "width": 20,
   "height": 18,
   "backgroundId": "9f7aa874-fb33-4106-9945-52685b08c542",
@@ -30,7 +30,8 @@
                 "select"
               ],
               "__collapse": true,
-              "persist": true
+              "persist": true,
+              "__comment": true
             },
             "children": {
               "true": [

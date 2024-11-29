@@ -15,7 +15,7 @@
   "moveSpeed": 1,
   "animSpeed": 15,
   "isPinned": false,
-  "persistent": false,
+  "persistent": true,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "script": [
@@ -32,7 +32,9 @@
   "updateScript": [
     {
       "command": "EVENT_GROUP",
-      "args": {},
+      "args": {
+        "__collapse": true
+      },
       "children": {
         "true": [
           {
@@ -202,6 +204,67 @@
         ]
       },
       "id": "2357449d-5e65-40b5-ae1f-86b5ffbf4fb5"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 30
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "d911094f-dda8-4b6c-aae8-6509f8800dea",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 7
+            },
+            "id": "977dd62b-9e08-4be2-8366-ba7650118ee3"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 2,
+              "frames": 30
+            },
+            "id": "200b4e06-22da-4f6d-8b4a-871f6ef0f198"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "f7d845c3-ae3e-4bcd-8d5c-97e8227ea2e2",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "6981a533-3e9f-4282-971f-f059016a68c2"
+          }
+        ],
+        "false": []
+      },
+      "id": "d1d11ba1-2b70-4dc9-a264-8bd41000290d"
     }
   ],
   "hit1Script": [],

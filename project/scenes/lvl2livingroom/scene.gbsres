@@ -17,6 +17,13 @@
   "playerSpriteSheetId": "51ce7dac-f513-4c5d-91ef-d249581516d0",
   "script": [
     {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "31f25276-2616-40c2-8381-e6570653f051"
+      },
+      "id": "8f424a76-230f-4349-97e7-e40a8bfd66bf"
+    },
+    {
       "id": "b88bdc5d-df90-4b60-806e-f93d0272839a",
       "command": "EVENT_GROUP",
       "args": {
@@ -32,7 +39,8 @@
                 "select"
               ],
               "__collapse": true,
-              "persist": true
+              "persist": true,
+              "__comment": true
             },
             "children": {
               "true": [
